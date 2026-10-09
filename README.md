@@ -1,7 +1,7 @@
 # Humanoid Robot Learning Research Internship Challenge
 
 
-The goal of this challenge is to drive a robotic manipulator in a simple simulation environment using data that we've recorded manually. My own research area is planning with world models, however, before attempting this challenge I had never collected data for planning. Many questions came to mind as i worked on this, how would simulating random actions work as opposed to manually creating simulation data? What kind of augmentation strategies would work for planning data? I aim to answer these questions in my work.
+The goal of this challenge is to drive a robotic manipulator in a simple simulation environment using data that we've recorded manually. My own research area is planning with world models, however, before attempting this challenge I had never collected data for planning. Many questions came to mind as i worked on this, how would simulating random actions work as opposed to manually creating simulation data? What kind of augmentation strategies would work well for planning data? I aim to answer these questions in my work.
 
 <p align="center">
   <img src="docs/media/method.svg" width="100%" alt="Method overview"><br>
