@@ -1,0 +1,20 @@
+__pycache__
+*.pyc
+figures
+*outputs*
+data
+wandb
+checkpoints
+*.slurm
+# *.sh  (scripts are tracked; *.slurm stays ignored because it holds the account and paths)
+# env/wall/data is a source package (WallDatasetConfig, layouts), not a dataset dir
+!env/wall/data/
+!env/wall/data/*.py
+qa
+raw
+synth
+episodes_pilot
+third_party
+plan_targets/
+plan_outputs/
+episodes

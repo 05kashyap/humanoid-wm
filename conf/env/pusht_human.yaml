@@ -1,0 +1,24 @@
+# phone2panda: Push-T trained on physics replays of my own pushes, rendered with a Panda.
+# `name` is the gym id registered in env/__init__.py; plan.py builds the env from it.
+name: pusht_human
+save_name: pusht_human_aug   # names the checkpoint folder; set per dataset (env.save_name=...)
+args: []
+kwargs:
+  with_velocity: true
+  with_target: true
+  damping: 0.1          # from phone2panda.fit_damping
+  renderer: panda       # must match the --renderer the dataset was built with
+
+dataset:
+  _target_: "datasets.pusht_human_dset.load_pusht_human_slice_train_val"
+  with_velocity: true
+  n_rollout: null
+  normalize_action: ${normalize_action}
+  data_path: ${oc.env:DATASET_DIR}/pusht_human_aug
+  split_ratio: 0.9
+  transform:
+    _target_: "datasets.img_transforms.default_transform"
+    img_size: ${img_size}
+
+decoder_path: null
+num_workers: 16
