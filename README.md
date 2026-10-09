@@ -134,7 +134,7 @@ and a transformer predicts the next latent from the last three latents and the a
   but a bend remains. Pacing puts more, smaller steps through the bend.</em>
 </p>
 
-The planner never sees images, only the latent space, so the shape of that space decides how
+The planner never sees images, only the latent space, so the conditioning of that space determines how
 easy planning is.
 
 - **Straightening** ([Temporal Straightening](#references)) penalizes turns in the latent path.
