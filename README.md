@@ -204,7 +204,7 @@ Every number in the tables is the fraction of tasks a model solves. A rollout is
 
 All models use temporal straightening and the same number of training steps.
 
-| training data | open loop (200 tasks) | T only | closed loop (50 tasks) | T only |
+| training data | open loop | T only | closed loop | T only |
 |---|---|---|---|---|
 | my demos + augmentation | 0.40 | 0.69 | 0.62 | 0.70 |
 | random play (same size) | **0.53** | **0.76** | 0.60 | 0.68 |
@@ -221,9 +221,6 @@ All models train on human demos + augmentation.
 | straightening | 0.40 | 0.69 | 0.62 | 0.70 |
 | pacing | 0.33 | **0.80** | 0.66 | 0.72 |
 | straightening + pacing | **0.46** | 0.76 | **0.76** | **0.82** |
-
-The best value in each column is in bold. One training run per model; the tasks, not training seeds, are the sample. Regenerate with `python helpers/update_readme.py`.
-<!-- results:end -->
 
 ### World model prediction quality
 
