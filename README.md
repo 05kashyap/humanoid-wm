@@ -137,7 +137,7 @@ and a transformer predicts the next latent from the last three latents and the a
 The planner never sees images, only the latent space, so the conditioning of that space determines how
 easy planning is.
 
-- **Straightening** ([Temporal Straightening](#references)) penalizes turns in the latent path.
+- **Temporal Straightening** ([Temporal Straightening](#references)) penalizes turns in the latent path.
   When paths bend, the straight-line distance to the goal, which the planner minimizes, stops
   measuring progress. Straighter paths make it a better guide and the planning objective
   better conditioned. It was applied with a weight of 0.1, too much straightening can lead to the latent space sacrificing informativeness for better optimiser convergence and ultimately worse planning performance. 
